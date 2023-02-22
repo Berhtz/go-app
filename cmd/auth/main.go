@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/Berhtz/go-auth/auth/handlers"
-	"github.com/Berhtz/go-auth/auth/models"
 	"github.com/Berhtz/go-auth/dbconn"
+	"github.com/Berhtz/go-auth/handlers"
+	"github.com/Berhtz/go-auth/models"
 	"github.com/joho/godotenv"
 )
 

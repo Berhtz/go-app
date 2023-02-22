@@ -6,7 +6,16 @@ import (
 
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/google/uuid"
+	"gorm.io/gorm"
 )
+
+type User struct {
+	gorm.Model
+	Id       uuid.UUID
+	Username string
+	Password string
+	Email    string
+}
 
 type Credentials struct {
 	Id       uuid.UUID `json:"id"`
